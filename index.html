@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<title>Portfolio</title>
+	<link href="assets/img/terminal-solid.svg" rel="shortcut icon" type="image/png" />
+</head>
+<body>
+	<header>
+		<a href="#home"><i class="fas fa-terminal"></i></a>
+		<div class="toggle" onclick="toggleMenu()"></div>
+		<ul class="menu">
+			<li><a href="#home" onclick="toggleMenu()">Inicio</a>
+			<li><a href="#aboutme" onclick="toggleMenu()">Sobre mi</a>
+			<li><a href="#skills" onclick="toggleMenu()">Habilidades</a></li>
+			<li><a href="#proyects" onclick="toggleMenu()">Proyectos</a></li>
+			<li><a href="#contact" onclick="toggleMenu()">Contacto</a></li></li>
+		</ul>
+	</header>
+
+	<section class="banner" id="home">
+		<div class="textBox">
+			<h2>Hola, soy <span>Paula Pereyra</span></h2>
+			<h3>Estudiante de la carrera de Analista de Sistemas</h3>
+			<a href="#aboutme" class="btn">Sobre mí</a>
+		</div>
+	</section>
+
+	<section class="about" id="aboutme">
+		<div class="heading">
+			<h2>Sobre mí</h2>
+		</div>
+		<div class="content">
+			<div class="contentBox w50">
+				<p>Soy una persona entusiasta, comprometida con mis tareas, autodidacta, alguien que nunca se cansa de aprender y siempre busca conocer cosas nuevas.<br><br>Tengo 20 años y soy de Entre Rios, Argentina. Actualmente estoy en el 3° año de la Tecnicatura Superior en Análisis y Desarrollo de Software.</p>
+				<a href="resumeViewer.html" class="btn resume-btn" target="_blank">Curriculum</a>
+			</div>
+			<div class="w50">
+				<img src="assets/img/aboutme_image.jpg" class="img" width="300px" height="300px">
+			</div>
+		</div>
+	</section>
+
+	<section class="skills" id="skills">
+		<div class="heading white">
+			<h2>Habilidades</h2>
+		</div>
+		<span>Front-End</span>
+		<div class="content">
+			<div class="skillsBox">
+				<i class="fab fa-html5"></i>
+				<p>HTML</p>
+			</div>
+			<div class="skillsBox">
+				<i class="fab fa-css3-alt"></i>
+				<p>CSS</p>
+			</div>
+			<div class="skillsBox">
+				<i class="fab fa-js"></i>
+				<p>JAVASCRIPT</p>
+			</div>
+			<div class="skillsBox">
+				<i class="fab fa-vuejs"></i>
+				<p>VUEJS</p>
+			</div>
+		</div>
+		<span>Back-End</span>
+		<div class="content">
+			<div class="skillsBox">
+				<i class="fab fa-php"></i>
+				<p>PHP</p>
+			</div>
+			<div class="skillsBox">
+				<i class="fab fa-laravel"></i>
+				<p>LARAVEL</p>
+			</div>
+		</div>
+		<span>Herramientas</span>
+		<div class="content">
+			<div class="skillsBox">
+				<i class="fab fa-git-alt"></i>
+				<p>GIT</p>
+			</div>
+			<div class="skillsBox">
+				<i class="fab fa-linux"></i>
+				<p>LINUX</p>
+			</div>
+			<div class="skillsBox">
+				<i class="fas fa-database"></i>
+				<p>MySQL</p>
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<section class="proyects" id="proyects">
+		<div class="heading">
+			<h2>Proyectos</h2>
+		</div>
+		<div class="content">
+			<!-- Dimensiones imagenes: 1196px - 620px -->
+			<div class="proyectBox">
+				<img src="assets/img/proyect1.png" alt="Porfolio Personal">
+			</div>
+			<div class="proyectBox">
+				<img src="assets/img/proyect2.png" alt="Estudio Jurídico">
+			</div>
+		</div>
+		<!-- <div class="heading">
+			<a href="#" class="btn">Ver más</a>
+		</div> -->
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="heading white">
+			<h2>Contacto</h2>
+		</div>
+		<div class="contactBox">
+			<div class="box">
+				<div class="cBox">
+					<i class="fab fa-github"></i>
+					<h3>Github</h3>
+				</div>
+				<p>@PaulaP12</p>
+			</div>
+			<div class="box">
+				<div class="cBox">
+					<i class="fas fa-envelope-open-text"></i>
+					<h3>Correo</h3>
+				</div>
+				<p class="mail">paulapereyrallorens@gmail.com</p>
+			</div>
+		</div>
+	</section>
+</body>
+	<script src="js/script.js"></script>
+	<script src="https://kit.fontawesome.com/0ad897951c.js" crossorigin="anonymous"></script>
+</html>
